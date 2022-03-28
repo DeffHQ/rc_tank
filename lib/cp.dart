@@ -16,9 +16,9 @@ class _cpState extends State<cp> {
   String myvariable = 'Off';
   @override
   Widget build(BuildContext context) {
-    return Scaffold( appBar: AppBar(backgroundColor: Color(0xFFFF8A80),title: Text('Control Page'),centerTitle: true,),
+    return Scaffold( appBar: AppBar(backgroundColor: Color(0xff343a40),title: Text('Control Page'),centerTitle: true,),
 
-      backgroundColor: const Color(0xFFFFEBEE),
+      backgroundColor: const Color(0xFFf1f3f5),
       body: Center(
         child: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
@@ -27,7 +27,7 @@ class _cpState extends State<cp> {
                   style: TextButton.styleFrom(
                     textStyle: const TextStyle(fontSize: 20),
                     primary: Colors.white,
-                    backgroundColor: const Color(0xFFFF5252),
+                    backgroundColor: const Color(0xFFfa5252),
 
                   ),
                   onPressed: () {
@@ -51,7 +51,7 @@ class _cpState extends State<cp> {
     TextButton(style: TextButton.styleFrom(
                 textStyle: const TextStyle(fontSize: 20),
                 primary: Colors.white,
-                backgroundColor: const Color(0xFFFF5252),
+                backgroundColor: const Color(0xFFfa5252),
 
               ),onPressed: (){
       Navigator.push(
