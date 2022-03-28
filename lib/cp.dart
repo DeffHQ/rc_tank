@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/widgets.dart';
 
+import 'CamPage.dart';
+
 class cp extends StatefulWidget {
   const cp({Key? key}) : super(key: key);
 
@@ -51,7 +53,11 @@ class _cpState extends State<cp> {
                 primary: Colors.white,
                 backgroundColor: const Color(0xFFFF5252),
 
-              ),onPressed: (){}, child: const Text('Cam Switch')),
+              ),onPressed: (){
+      Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const CamPage()),);
+    }, child: const Text('Cam Switch')),
           ],
 
 
